@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Lista de registros ingresados.</h2>
+<table class="table" *ngFor="let test of arrayTestModel">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="row">id</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Date</th>
+        <th scope="col">Coordenadas</th>
+        <th scope="col">AudioPrueba</th>
+        <th scope="col">Contact</th>
+        <th scope="col">UrlImage</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th >{{test.id}}</th>
+        <td>{{test.titulo}}</td>
+        <td>{{test.date}}</td>
+        <td>{{test.coordenadas}}</td>
+        <td>{{test.audioPrueba}}</td>
+        <td>{{test.contact}}</td>
+        <td>{{test.urlImage}}</td>
+        <td> <div class="mi-modal">
+            <button type="button" class="btn btn-primary" routerLink="/detalle">Detalle</button>
+    </div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
